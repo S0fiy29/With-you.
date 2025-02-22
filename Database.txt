@@ -1,0 +1,17 @@
+CREATE TABLE Approval ( id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, name VARCHAR(40), package int, venue VARCHAR(10), datetime TIMESTAMP, guest INT, booking_status VARCHAR(20) DEFAULT 'Pending' )
+
+CREATE TABLE Info (
+    id INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+    name VARCHAR(255),
+    number VARCHAR(20),
+    email VARCHAR(255),
+	package INT,
+    venue VARCHAR(255),
+    datetime TIMESTAMP,
+    guest INT,
+    PRIMARY KEY (id)
+);
+
+
+CREATE TABLE feedback(name VARCHAR(40),phone VARCHAR(15), email VARCHAR(40),
+message VARCHAR(100))
